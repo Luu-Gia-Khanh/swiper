@@ -1,0 +1,107 @@
+/* src/CategoryShowcase.css */
+html {
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.category-showcase .category-showcase-swiper {
+  border-bottom-left-radius: 54px;
+  border-top-left-radius: 54px;
+  height: 54px;
+  overflow: hidden;
+  padding-left: 2px;
+  width: 142px;
+}
+
+body {
+  margin: 100px;
+}
+
+.category-showcase {
+  align-items: center;
+  display: flex;
+  height: 54px;
+  position: relative;
+  width: 176px;
+  z-index: 1;
+}
+
+.category-avator {
+  background: #fff;
+  border: 2px solid #fff;
+  border-radius: 48px;
+  box-sizing: border-box;
+  height: 48px;
+  width: 48px;
+}
+
+.category-showcase-plus {
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  height: 48px;
+  width: 48px;
+  border: none;
+  background: transparent; /* Nền trong suốt */
+  z-index: 2;
+  cursor: pointer; /* Con trỏ chuột khi hover */
+  padding: 0; /* Không có padding */
+}
+
+.category-showcase-plus img {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide-active {
+  animation-delay: .1s;
+  animation-duration: .9s;
+  animation-name: swiperActive-f087a4a3;
+}
+
+@keyframes swiperActive-f087a4a3 {
+  0% {
+      transform: translate(0);
+  }
+  50% {
+      transform: translate(-5px);
+  }
+  to {
+      transform: translate(0);
+  }
+}
+
+.swiper-slide-next img {
+  animation-duration: 1s;
+  animation-name: swiperNext-f087a4a3;
+}
+
+@keyframes swiperNext-f087a4a3 {
+  0% {
+      height: 24px;
+      transform: translate(24px);
+      width: 24px;
+  }
+  40% {
+      height: 54px;
+      transform: translate(-10px);
+      width: 54px;
+  }
+  to {
+      height: 48px;
+      transform: translate(0);
+      width: 48px;
+  }
+}
